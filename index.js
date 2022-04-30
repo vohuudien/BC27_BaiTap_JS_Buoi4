@@ -53,15 +53,27 @@ function filt() {
     var theFirstNum = document.getElementById("theFirstNum").value ;
     var theSecondNum = document.getElementById("theSecondNum").value ;
     var theThirdNum = document.getElementById("theThirdNum").value ;
-    var soLe;
-    var soChan;
-    document.getElementById("result").style.display = "block";
-if (theFirstNum % 2 == 0){
-sole = soLe + 1;
-soChan = 3 - sole;
-console.log(soChan)
-document.getElementById("filtNum").innerHTML = soChan + "và" + soLe
+    var soLe = 0;
+    var soChan = 0;
+    document.getElementById("reSult").style.display = "block";
+if (theFirstNum % 2 === 0){
+sole = soLe ++;
+} 
+else {
+    soChan = soChan ++;
 }
+if (theSecondNum % 2 === 0){
+    sole = soLe ++;
+} 
+else {
+        soChan = soChan ++;
+}
+if (theThirdNum % 2 === 0){
+sole = soLe ++;
+} 
+else {
+soChan = soChan ++;
+}
+document.getElementById("filtNum").innerHTML = soChan + "và" + soLe
 
-
-
+}
