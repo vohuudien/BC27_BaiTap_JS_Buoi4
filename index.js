@@ -48,8 +48,8 @@ else if(greeting ==="4"){
     document.getElementById("show").style.display ="block"
 }
 }
-//3
-function filt() {
+//Bài 3
+function filtNumber() {
     var theFirstNum = document.getElementById("theFirstNum").value ;
     var theSecondNum = document.getElementById("theSecondNum").value ;
     var theThirdNum = document.getElementById("theThirdNum").value ;
@@ -66,7 +66,7 @@ if (theSecondNum % 2 === 0){
     sole = soLe ++;
 } 
 else {
-        soChan = soChan ++;
+soChan = soChan ++;
 }
 if (theThirdNum % 2 === 0){
 sole = soLe ++;
@@ -74,6 +74,5 @@ sole = soLe ++;
 else {
 soChan = soChan ++;
 }
-document.getElementById("filtNum").innerHTML = soChan + "và" + soLe
-
+document.getElementById("filtNum").innerHTML = soChan + " và " + soLe
 }
