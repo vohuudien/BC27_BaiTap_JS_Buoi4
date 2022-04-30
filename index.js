@@ -57,19 +57,19 @@ function filtNumber() {
     var soChan = 0;
     document.getElementById("reSult").style.display = "block";
 if (theFirstNum % 2 === 0){
-sole = soLe ++;
+soLe = soLe ++;
 } 
 else {
     soChan = soChan ++;
 }
 if (theSecondNum % 2 === 0){
-    sole = soLe ++;
+    soLe = soLe ++;
 } 
 else {
 soChan = soChan ++;
 }
 if (theThirdNum % 2 === 0){
-sole = soLe ++;
+soLe = soLe ++;
 } 
 else {
 soChan = soChan ++;
