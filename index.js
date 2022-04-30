@@ -77,7 +77,7 @@ else {
 document.getElementById("filtNum").innerHTML = soChan + " và " + soLe
 }
 //Bài 4:
-function check() {
+function checkEl() {
     var a = document.getElementById("theA").value;
     var b = document.getElementById("theB").value;
     var c = Document.getElementById("theC").value ;
@@ -94,8 +94,8 @@ function check() {
         if (a === b && a === c){
             name ="Tam Giác Đều"
         }
-        if (a*a + b*b === c*c || a*a + c*C = b*b || a*a = b*b + c*c){
-            name ="Tam Giác Vuông"
+        if (a * a + b * b === c * c || a * a + c * c === b * b || a*a === b*b + c*c){
+           name ="Tam Giác Vuông"
         }
         else {
             name="Tam Giác Thường"
