@@ -57,22 +57,22 @@ function filtNumber() {
     var soChan = 0;
     document.getElementById("reSult").style.display = "block";
 if (theFirstNum % 2 === 0){
-soLe = soLe ++;
+soChan ++;
 } 
 else {
-    soChan = soChan ++;
+    soLe ++;
 }
 if (theSecondNum % 2 === 0){
-    soLe = soLe ++;
+    soChan ++;
 } 
 else {
-soChan = soChan ++;
+soLe ++;
 }
 if (theThirdNum % 2 === 0){
-soLe = soLe ++;
+soChan ++;
 } 
 else {
-soChan = soChan ++;
+    soLe ++;
 }
 document.getElementById("filtNum").innerHTML = soChan + " và " + soLe
 }
