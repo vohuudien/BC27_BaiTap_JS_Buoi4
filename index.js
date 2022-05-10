@@ -78,29 +78,28 @@ document.getElementById("filtNum").innerHTML = soChan + " và " + soLe
 }
 //Bài 4:
 function checkEl() {
-    var a = document.getElementById("theA").value;
-    var b = document.getElementById("theB").value;
-    var c = Document.getElementById("theC").value ;
+    var a = +document.getElementById("theA").value;
+    var b = +document.getElementById("theB").value;
+    var c = +document.getElementById("theC").value ;
     
     var name = "";
     if (a + b <= c || a + c <= b || b + c <= a){
         name = "Khong ton tai"
     }
     else{
-        if ((a===b && a !== c)||(a==c && a !==b)||(b ===c && b 
-            !== a)){
+        if ((a === b && a !== c)||(a === c && a !== b)||(b === c && b !== a)){
             name ="Tam Giác Cân"
             }
-        if (a === b && a === c){
+        else if (a === b && a === c){
             name ="Tam Giác Đều"
         }
-        if (a * a + b * b === c * c || a * a + c * c === b * b || a*a === b*b + c*c){
+        else if (a * a + b * b === c * c || a * a + c * c === b * b || a*a === b*b + c*c){
            name ="Tam Giác Vuông"
         }
-        else {
+        else{
             name="Tam Giác Thường"
         }
     }
-    document.getElementById("check").style.display = "block";
+    document.getElementById("checkEl").style.display = "block";
     document.getElementById("checkNum").innerHTML= name
 }
